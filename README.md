@@ -2,7 +2,7 @@
 
 ### ARCHITECTURE
 <p align="center">
-<img src="images/diagram.JPG"  height="300" width="500" />
+<img src="images/diagram.JPG"  height="400" width="500" />
 </p>
 
 ### AWS services and Tools
