@@ -35,6 +35,7 @@
 * Click "Next".
 * Name your policy.
 * Click "Create policy".
+  
             {
           "Version": "2012-10-17",
           "Statement": [
