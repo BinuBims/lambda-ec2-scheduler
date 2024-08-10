@@ -105,7 +105,24 @@
   * After that, deploy and test your Lambda function. If the test is successful, your stopped instance should start running.
 
 ## 5. Set up two separate events in EventBridge to trigger these Lambda functions.
-Search for "EventBridge" in the AWS search bar > Select "Create rule" > Name your rule > Choose "Schedule" > Continue in "EventBridge Schedule" > Select "Recurring schedule" > Choose "Cron-based schedule" > Turn off "Flexible time window" > Click "Next" > Select "AWS Lambda" as the target > Pick the Lambda function to stop the instance > Keep default settings > Click "Create schedule"
-
-
-
+* Search for "EventBridge" in the AWS search bar.
+* Select "EventBridge Rule".
+* Click "Create rule".
+* Name your rule.
+* Choose "Schedule".
+* Continue in "EventBridge Schedule".
+* Select "Recurring schedule".
+* Choose "Cron-based schedule".
+* Turn off "Flexible time window".
+* Click "Next".
+* For the target type, select "API".
+* Choose "Template targets".
+* Select "AWS Lambda".
+* Pick the Lambda function you created to stop the instance.
+* Click "Next".
+* Leave everything as default in the "Settings" section.
+* Click "Next", then Create schedule.
+* Repeat the process to create a separate event that invokes the other Lambda function.
+  
+<img src="data/images/cron.JPG"  height="200" width="450" />
+** Note: This cron expression will run at 6:18 PM, Monday through Friday, every month, every year.
