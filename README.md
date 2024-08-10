@@ -2,7 +2,7 @@
 
 ### ARCHITECTURE
 <p align="center">
-<img src="data/images/diagram.jpeg"  height="400" width="600" />
+<img src="data/images/diagram.JPEG"  height="400" width="600" />
 </p>
 
 ### AWS services and Tools
@@ -35,28 +35,28 @@
 * Click "Next".
 * Name your policy.
 * Click "Create policy".
-      {
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": [
-                "logs:CreateLogGroup",
-                "logs:CreateLogStream",
-                "logs:PutLogEvents"
-            ],
-            "Resource": "arn:aws:logs:*:*:*"
-        },
-        {
-            "Effect": "Allow",
-            "Action": [
-                "ec2:Start*",
-                "ec2:Stop*"
-            ],
-            "Resource": "*"
-        }
-    ]
-}
+            {
+          "Version": "2012-10-17",
+          "Statement": [
+              {
+                  "Effect": "Allow",
+                  "Action": [
+                      "logs:CreateLogGroup",
+                      "logs:CreateLogStream",
+                      "logs:PutLogEvents"
+                  ],
+                  "Resource": "arn:aws:logs:*:*:*"
+              },
+              {
+                  "Effect": "Allow",
+                  "Action": [
+                      "ec2:Start*",
+                      "ec2:Stop*"
+                  ],
+                  "Resource": "*"
+              }
+          ]
+      }
 
 
 
