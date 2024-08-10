@@ -123,8 +123,11 @@
 * Leave everything as default in the "Settings" section.
 * Click "Next", then Create schedule.
 * Repeat the process to create a separate event that invokes the other Lambda function.
-  <img src="images/cron.JPG"  height="200" width="450" />
+  
+  <img src="images/cron.JPG"  height="100" width="450" />
+  
 ** Note: This cron expression will run at 6:18 PM, Monday through Friday, every month, every year.
 
 * If you go to CloudTrail under "Event history," you'll see that EventBridge has invoked the Lambda function, and the EC2 instance has been stopped and started.
-  <img src="images/event-history.JPG"  height="300" width="450" />
+  
+  <img src="images/event-history.JPG"  height="200" width="500" />
