@@ -130,4 +130,4 @@
 
 * If you go to CloudTrail under "Event history," you'll see that EventBridge has invoked the Lambda function, and the EC2 instance has been stopped and started.
   
-  <img src="images/event-history.JPG"  height="200" width="500" />
+  <img src="images/event-history.JPG"  height="200" width="600" />
